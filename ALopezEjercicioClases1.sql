@@ -72,8 +72,12 @@ SELECT
     SUBSTR(p.nombre_producto, LENGTH(p.nombre_producto)-10) AS ultimos_10_caracteres
 FROM clientes c
 	INNER JOIN ventas v ON c.IdClientes = v.IdClientes
-	INNER JOIN productos p ON p.idproducto = v.idproductos
+	INNER JOIN productos p ON p.idproducto = v.idproductos;
 
-
+SELECT ventas.IdClientes, clientes.Nombre
+FROM clientes INNER JOIN ventas
+ON clientes.IdClientes = ventas.IdClientes
+GROUP BY ventas.IdClientes
+HAVING COUNT(*) >= 3;
 
 
