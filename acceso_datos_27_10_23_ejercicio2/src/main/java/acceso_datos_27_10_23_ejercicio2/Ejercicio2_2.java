@@ -8,8 +8,8 @@ import java.sql.Statement;
 public class Ejercicio2_2 {
 
 	private static final String URL = "jdbc:mysql://localhost:3306/TiendaPC?serverTimezone=UTC";
-	private static final String USER = "root"; // Por defecto es 'root' en XAMPP
-	private static final String PASSWORD = ""; // Por defecto es vacío en XAMPP
+	private static final String USER = "root"; 
+	private static final String PASSWORD = ""; 
 
 	 public static void main(String[] args) {
 	        try {

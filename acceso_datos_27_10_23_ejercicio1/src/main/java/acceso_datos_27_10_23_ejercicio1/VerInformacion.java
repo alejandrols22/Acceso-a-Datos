@@ -22,7 +22,7 @@ public class VerInformacion {
 	                System.out.println("Nombre " + meta.getDatabaseProductName());
 	                System.out.println("version " + meta.getDatabaseProductVersion());
 	                
-	                // Aquí supondré que quieres obtener las columnas de una tabla llamada "productos"
+	                // Aquí  obtengo las columnas de la tabla llamada "productos"
 	                ResultSet columnas = meta.getColumns("tienda3", null, "productos", null); 
 	                System.out.println("consulta realizada");
 	                System.out.println("BBDD tienda3");
