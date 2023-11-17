@@ -12,38 +12,39 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ClienteModel {
-    private Connection conn;
+	private Connection conn;
 
-    // Constructor que recibe la URL de la base de datos, el usuario y la contraseña
-    public ClienteModel(String dbURL, String dbUser, String dbPassword) throws SQLException {
-        // Establece la conexión con la base de datos
-        conn = DriverManager.getConnection(dbURL, dbUser, dbPassword);
-    }
+	// Constructor que recibe la URL de la base de datos, el usuario y la contraseña
+	public ClienteModel(String dbURL, String dbUser, String dbPassword) throws SQLException {
+		// Establece la conexión con la base de datos
+		conn = DriverManager.getConnection(dbURL, dbUser, dbPassword);
+	}
 
-    // Método para obtener todos los clientes de la base de datos y devolverlos como una lista
-    public List<Cliente> getAllClientes() throws SQLException {
-        List<Cliente> clientes = new ArrayList<>();
-        PreparedStatement stmt = conn.prepareStatement("SELECT * FROM clientes");
+	// Método para obtener todos los clientes de la base de datos y devolverlos como
+	// una lista
+	public List<Cliente> getAllClientes() throws SQLException {
+		List<Cliente> clientes = new ArrayList<>();
+		PreparedStatement stmt = conn.prepareStatement("SELECT * FROM clientes");
 
-        ResultSet rs = stmt.executeQuery();
+		ResultSet rs = stmt.executeQuery();
 
-        while (rs.next()) {
-            int id = rs.getInt("Id_CLIENTES");  
-            String nif = rs.getString("CIF_NIF");  
-            String nombre = rs.getString("NOMBRE");  
-          
-            String edad = "";  
+		while (rs.next()) {
+			int id = rs.getInt("Id_CLIENTES");
+			String nif = rs.getString("CIF_NIF");
+			String nombre = rs.getString("NOMBRE");
 
-            clientes.add(new Cliente(id, nif, nombre, edad));
-        }
+			String edad = "";
 
-        stmt.close();
-        rs.close();
-        return clientes;
-    }
+			clientes.add(new Cliente(id, nif, nombre, edad));
+		}
 
-    // Método para cerrar la conexión a la base de datos
-    public void close() throws SQLException {
-        conn.close();
-    }
+		stmt.close();
+		rs.close();
+		return clientes;
+	}
+
+	// Método para cerrar la conexión a la base de datos
+	public void close() throws SQLException {
+		conn.close();
+	}
 }
