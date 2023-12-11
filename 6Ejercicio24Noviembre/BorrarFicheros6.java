@@ -2,16 +2,25 @@ package accesodatos_24_11_23;
 
 import java.io.File;
 
-public class BorraFicheros6 {
+public class BorrarFicheros6 {
     public static void main(String[] args) {
-        File directorio = new File("C:/usuario/DAM");
-        File[] archivos = directorio.listFiles();
-        if (archivos != null) {
-            for (File archivo : archivos) {
-                if (archivo.isFile()) {
-                    archivo.delete();
-                }
+        String ruta = ".\\src\\ficheros\\ejercicio1\\";
+        String nombreFichero = "fichero1.txt"; // Nombre del fichero que deseamos borrar
+
+        // Combinar la ruta del directorio con el nombre del fichero
+        String rutaFichero = ruta + File.separator + nombreFichero;
+
+        File fichero = new File(rutaFichero);
+
+        if (fichero.exists()) {
+            boolean borrado = fichero.delete();
+            if (borrado) {
+                System.out.println("El fichero ha sido borrado con éxito.");
+            } else {
+                System.out.println("No se pudo borrar el fichero.");
             }
+        } else {
+            System.out.println("El fichero no existe.");
         }
     }
 }

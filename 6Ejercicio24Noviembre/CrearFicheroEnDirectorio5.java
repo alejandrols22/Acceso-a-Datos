@@ -4,12 +4,29 @@ import java.io.File;
 import java.io.IOException;
 
 public class CrearFicheroEnDirectorio5 {
-    public static void main(String[] args) throws IOException {
-        File directorio = new File("C:/usuario/DAM");
-        File fichero = new File(directorio, "nuevoFichero.txt");
 
-        if (directorio.exists() && directorio.isDirectory()) {
-            fichero.createNewFile();
+    public static void main(String[] args) {
+        String ruta = ".\\src\\ficheros\\ejercicio1\\";
+        String nombreFichero = "fichero1.txt"; // Nombre del fichero que queremos crear
+
+        // Combinar la ruta del directorio con el nombre del fichero
+        String rutaFichero = ruta + File.separator + nombreFichero;
+
+        File fichero = new File(rutaFichero);
+
+        if (fichero.exists()) {
+            System.out.println("El fichero ya existe.");
+        } else {
+            try {
+                boolean creado = fichero.createNewFile();
+                if (creado) {
+                    System.out.println("El fichero ha sido creado con éxito.");
+                } else {
+                    System.out.println("No se ha podido crear el fichero.");
+                }
+            } catch (IOException e) {
+                System.out.println("Ocurrió un error al crear el fichero: " + e.getMessage());
+            }
         }
     }
 }
