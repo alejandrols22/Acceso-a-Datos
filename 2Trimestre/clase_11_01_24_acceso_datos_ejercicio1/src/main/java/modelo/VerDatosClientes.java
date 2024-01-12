@@ -28,7 +28,7 @@ public class VerDatosClientes {
 			session.beginTransaction();
 
 			// Crear consulta HQL para seleccionar todos los registros de la tabla
-			// fabricante
+			// clientes
 			String hql = "FROM Clientes";
 			Query<Clientes> query = session.createQuery(hql, Clientes.class);
 

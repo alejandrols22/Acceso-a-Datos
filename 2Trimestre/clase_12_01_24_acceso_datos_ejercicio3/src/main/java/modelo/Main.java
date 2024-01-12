@@ -26,7 +26,7 @@ public class Main {
 		try {
 			// Crear objeto alumno
 			Alumnos alumno = new Alumnos("Alejandro", "Lopez", "Sepulveda", Date.valueOf("2000-10-01"), "No",
-					633937288);
+					"633937288");
 
 			// Obtener la sesion actual
 			Session session = context.currentSession();

@@ -29,7 +29,7 @@ public class Alumnos {
 	private String es_repetidor;
 
 	@Column(name = "telefono")
-	private double telefono;
+	private String telefono;
 
 	// Constructor por defecto requerido por Hibernate
 	public Alumnos() {
@@ -40,7 +40,7 @@ public class Alumnos {
 	// un apellido1, un apellido2, una fecha de nacimiento, si es repetidor, y su
 	// telefono
 	public Alumnos(String nombre, String apellido1, String apellido2, Date fecha_nacimiento, String es_repetidor,
-			double telefono) {
+			String telefono) {
 		this.nombre = nombre;
 		this.apellido1 = apellido1;
 		this.apellido2 = apellido2;
@@ -110,12 +110,12 @@ public class Alumnos {
     }
     
     // Getter y setter para el atributo telefono
-    public double getTelefono() {
+    public String getTelefono() {
     	return telefono;
     	
     }
     
-    public void setTelefono(double telefono) {
+    public void setTelefono(String telefono) {
     	this.telefono = telefono;
     }
     

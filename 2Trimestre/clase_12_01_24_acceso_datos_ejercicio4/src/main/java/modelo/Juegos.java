@@ -8,8 +8,8 @@ public class Juegos {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
-	private int id;
+	@Column(name = "idjuego")
+	private int idjuego;
 
 	@Column(name = "nombre")
 	private String nombre;
@@ -43,12 +43,12 @@ public class Juegos {
 		this.plataforma = plataforma;
 	}
 
-	public int getId() {
-		return id;
+	public int getIdjuego() {
+		return idjuego;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setIdjuego(int idjuego) {
+		this.idjuego = idjuego;
 	}
 
 	public String getNombre() {
@@ -102,7 +102,7 @@ public class Juegos {
     @Override
     public String toString() {
         return "Clientes{" +
-                "id=" + id +
+                "idjuego=" + idjuego +
                 ", nombre='" + nombre + '\'' +
                 ", anio='" + anio + '\'' +
                 ", compañia='" + compañia + '\'' +
