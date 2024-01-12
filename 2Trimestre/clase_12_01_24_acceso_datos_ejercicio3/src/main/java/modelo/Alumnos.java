@@ -110,7 +110,7 @@ public class Alumnos {
     }
     
     // Getter y setter para el atributo telefono
-    public double telefono() {
+    public double getTelefono() {
     	return telefono;
     	
     }
