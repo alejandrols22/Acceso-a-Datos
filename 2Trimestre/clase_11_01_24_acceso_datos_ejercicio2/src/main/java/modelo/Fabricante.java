@@ -46,7 +46,7 @@ public class Fabricante {
  // Mtodo para imprimir informacin del objeto fabricante
     @Override
     public String toString() {
-        return "Alumno{" +
+        return "Fabricante{" +
                 "codigo=" + codigo +
                 ", nombre='" + nombre + '\'' +
                 '}';
