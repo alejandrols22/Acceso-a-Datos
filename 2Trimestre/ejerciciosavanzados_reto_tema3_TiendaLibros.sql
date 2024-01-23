@@ -61,3 +61,12 @@ CREATE TABLE IF NOT EXISTS DetallePedido (
     FOREIGN KEY (pedido_id) REFERENCES Pedido(id),
     FOREIGN KEY (libro_id) REFERENCES Libro(id)
 );
+
+
+CREATE TABLE IF NOT EXISTS tiendalibros.libro_autor (
+    libro_id INT NOT NULL,
+    autor_id INT NOT NULL,
+    PRIMARY KEY (libro_id, autor_id),
+    FOREIGN KEY (libro_id) REFERENCES Libro(id),
+    FOREIGN KEY (autor_id) REFERENCES Autor(id)
+);
