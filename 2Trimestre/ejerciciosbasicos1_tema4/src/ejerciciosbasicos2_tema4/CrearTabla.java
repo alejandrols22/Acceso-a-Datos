@@ -1,12 +1,12 @@
 package ejerciciosbasicos2_tema4;
 
+
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.SQLException;
 
-public class CrearTablaCategorias {
-
+public class CrearTabla {
     private static final String URL = "jdbc:oracle:thin:@localhost:1521:xe";
     private static final String USUARIO = "SYSTEM";
     private static final String CONTRASENA = "1234";
@@ -27,13 +27,13 @@ public class CrearTablaCategorias {
         Connection conexion = obtenerConexion();
         if (conexion != null) {
             try (Statement statement = conexion.createStatement()) {
-                String crearTablaSQL = "CREATE TABLE categorias_de_productos ("
+                String crearTablaSQL = "CREATE TABLE empresa ("
                         + "id INT PRIMARY KEY,"
-                        + "categoria VARCHAR(30),"
-                        + "subcategoria VARCHAR(30)"
+                        + "nombre VARCHAR(50),"
+                        + "pais VARCHAR(50)"
                         + ")";
                 statement.executeUpdate(crearTablaSQL);
-                System.out.println("Tabla 'categorias_de_productos' creada con éxito.");
+                System.out.println("Tabla 'empresa' creada con éxito.");
             } catch (SQLException e) {
                 e.printStackTrace();
             }
