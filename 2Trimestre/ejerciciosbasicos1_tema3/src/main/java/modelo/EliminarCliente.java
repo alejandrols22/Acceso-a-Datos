@@ -9,6 +9,7 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
+
 public class EliminarCliente {
 
     public static void main(String[] args) {
