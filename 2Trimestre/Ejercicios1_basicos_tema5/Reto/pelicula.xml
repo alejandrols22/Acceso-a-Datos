@@ -1,0 +1,56 @@
+<catalogo_de_peliculas>
+  <pelicula>
+    <titulo>El Origen</titulo>
+    <anio>2010</anio>
+    <genero>Ciencia Ficción, Thriller</genero>
+    <director>Christopher Nolan</director>
+    <elenco>
+      <actor>Leonardo DiCaprio</actor>
+      <actor>Joseph Gordon-Levitt</actor>
+      <actor>Ellen Page</actor>
+    </elenco>
+  </pelicula>
+  <pelicula>
+    <titulo>La La Land</titulo>
+    <anio>2016</anio>
+    <genero>Musical, Romance</genero>
+    <director>Damien Chazelle</director>
+    <elenco>
+      <actor>Ryan Gosling</actor>
+      <actor>Emma Stone</actor>
+    </elenco>
+  </pelicula>
+  <pelicula>
+    <titulo>Interstellar</titulo>
+    <anio>2014</anio>
+    <genero>Ciencia Ficción, Drama</genero>
+    <director>Christopher Nolan</director>
+    <elenco>
+      <actor>Matthew McConaughey</actor>
+      <actor>Anne Hathaway</actor>
+      <actor>Jessica Chastain</actor>
+    </elenco>
+  </pelicula>
+  <pelicula>
+    <titulo>Parásitos</titulo>
+    <anio>2019</anio>
+    <genero>Thriller, Drama</genero>
+    <director>Bong Joon-ho</director>
+    <elenco>
+      <actor>Song Kang-ho</actor>
+      <actor>Lee Sun-kyun</actor>
+      <actor>Cho Yeo-jeong</actor>
+    </elenco>
+  </pelicula>
+  <pelicula>
+    <titulo>El Señor de los Anillos: La Comunidad del Anillo</titulo>
+    <anio>2001</anio>
+    <genero>Aventura, Fantasía</genero>
+    <director>Peter Jackson</director>
+    <elenco>
+      <actor>Elijah Wood</actor>
+      <actor>Ian McKellen</actor>
+      <actor>Viggo Mortensen</actor>
+    </elenco>
+  </pelicula>
+</catalogo_de_peliculas>
