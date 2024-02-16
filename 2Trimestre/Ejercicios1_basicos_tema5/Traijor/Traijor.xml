@@ -1,0 +1,52 @@
+<clientes>
+  <cliente id="1">
+    <empresa>Empresa A</empresa>
+    <pais>España</pais>
+    <facturacion>75000</facturacion>
+  </cliente>
+  <cliente id="2">
+    <empresa>Empresa B</empresa>
+    <pais>Alemania</pais>
+    <facturacion>60000</facturacion>
+  </cliente>
+  <cliente id="3">
+    <empresa>Empresa C</empresa>
+    <pais>Francia</pais>
+    <facturacion>80000</facturacion>
+  </cliente>
+  <cliente id="4">
+    <empresa>Empresa D</empresa>
+    <pais>España</pais>
+    <facturacion>90000</facturacion>
+  </cliente>
+  <cliente id="5">
+    <empresa>Empresa E</empresa>
+    <pais>Alemania</pais>
+    <facturacion>100000</facturacion>
+  </cliente>
+  <cliente id="6">
+    <empresa>Empresa F</empresa>
+    <pais>Francia</pais>
+    <facturacion>75000</facturacion>
+  </cliente>
+  <cliente id="7">
+    <empresa>Empresa G</empresa>
+    <pais>España</pais>
+    <facturacion>55000</facturacion>
+  </cliente>
+  <cliente id="8">
+    <empresa>Empresa H</empresa>
+    <pais>Alemania</pais>
+    <facturacion>95000</facturacion>
+  </cliente>
+  <cliente id="9">
+    <empresa>Empresa I</empresa>
+    <pais>Francia</pais>
+    <facturacion>70000</facturacion>
+  </cliente>
+  <cliente id="10">
+    <empresa>Empresa J</empresa>
+    <pais>España</pais>
+    <facturacion>80000</facturacion>
+  </cliente>
+</clientes>

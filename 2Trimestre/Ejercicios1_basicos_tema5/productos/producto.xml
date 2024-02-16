@@ -1,0 +1,62 @@
+<productos>
+  <producto>
+    <nombre>Portátil Lenpad 3</nombre>
+    <fabricante>Lenpad</fabricante>
+    <precio>699.99</precio>
+  </producto>
+  <producto>
+    <nombre>Monitor GL 2M60M-B</nombre>
+    <fabricante>GL</fabricante>
+    <precio>169.99</precio>
+  </producto>
+  <producto>
+    <nombre>Teclado Logisur K20</nombre>
+    <fabricante>Logisur</fabricante>
+    <precio>19.99</precio>
+  </producto>
+  <producto>
+    <nombre>Mouse inalámbrico Micro 150</nombre>
+    <fabricante>Micro</fabricante>
+    <precio>14.99</precio>
+  </producto>
+  <producto>
+    <nombre>Disco duro externo Seahard Expansion</nombre>
+    <fabricante>Seahard</fabricante>
+    <precio>69.99</precio>
+  </producto>
+  <producto>
+    <nombre>Memoria RAM Queenston HyperX force</nombre>
+    <fabricante>Queenston</fabricante>
+    <precio>99.99</precio>
+  </producto>
+  <producto>
+    <nombre>Tablet Trek Galaxy Tab A7</nombre>
+    <fabricante>Trek</fabricante>
+    <precio>229.99</precio>
+  </producto>
+  <producto>
+    <nombre>Impresora Wortp DeskJet 20</nombre>
+    <fabricante>Wortp</fabricante>
+    <precio>79.99</precio>
+  </producto>
+  <producto>
+    <nombre>Altavoces Sound Pivody</nombre>
+    <fabricante>Pivody</fabricante>
+    <precio>24.99</precio>
+  </producto>
+  <producto>
+    <nombre>Cámara web Log C70</nombre>
+    <fabricante>Log</fabricante>
+    <precio>34.99</precio>
+  </producto>
+  <producto>
+    <nombre>Portátil Lenovo ThinkPad X1 Carbon</nombre>
+    <fabricante>Lenovo</fabricante>
+    <precio>1200</precio>
+</producto>
+<producto>
+    <nombre>Tablet Apple iPad Pro 12.9</nombre>
+    <fabricante>Apple</fabricante>
+    <precio>1100</precio>
+</producto>
+</productos>
