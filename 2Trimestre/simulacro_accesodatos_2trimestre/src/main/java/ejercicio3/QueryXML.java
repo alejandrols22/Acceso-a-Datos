@@ -14,30 +14,29 @@ import org.xmldb.api.modules.XMLResource;
 import org.xmldb.api.modules.XPathQueryService;
 import org.xmldb.api.modules.XQueryService;
 
-
-
 public class QueryXML {
 
-    // URI para conectarse a la base de datos XML existente en localhost en el puerto 8080
-    private static String URI = "xmldb:exist://localhost:8080/exist/xmlrpc/db/";
+	// URI para conectarse a la base de datos XML existente en localhost en el
+	// puerto 8080
+	private static String URI = "xmldb:exist://localhost:8080/exist/xmlrpc/db/";
 
-    // Nombre de la colección donde se encuentran los datos XML
-    private static String COLLECTION = "serie";
+	// Nombre de la colección donde se encuentran los datos XML
+	private static String COLLECTION = "serie";
 
-    // Nombre del recurso XML dentro de la colección
-    private static String RESOURCE = "serie.xml";
+	// Nombre del recurso XML dentro de la colección
+	private static String RESOURCE = "serie.xml";
 
-    public static void main(String args[]) throws Exception {
+	public static void main(String args[]) throws Exception {
 
-        final String driver = "org.exist.xmldb.DatabaseImpl";
+		final String driver = "org.exist.xmldb.DatabaseImpl";
 
-        // Inicializa el controlador de la base de datos
-        Class cl = Class.forName(driver);
-        Database database = (Database) cl.getDeclaredConstructor().newInstance();
-        database.setProperty("create-database", "true");
-        DatabaseManager.registerDatabase(database);
+		// Inicializa el controlador de la base de datos
+		Class cl = Class.forName(driver);
+		Database database = (Database) cl.getDeclaredConstructor().newInstance();
+		database.setProperty("create-database", "true");
+		DatabaseManager.registerDatabase(database);
 
-        Collection col = null;
+		Collection col = null;
 		XMLResource res = null;
 		try {
 			// Obtiene la colección
@@ -68,17 +67,16 @@ public class QueryXML {
 				}
 			}
 
-			
-				if (col == null) {
-				    System.out.println("No se pudo conectar a la colección: " + COLLECTION);
-				    return;
-				}
-				try {
-					// Cierra la colección
-					col.close();
-				} catch (XMLDBException xe) {
-					xe.printStackTrace();
-				}
+			if (col == null) {
+				System.out.println("No se pudo conectar a la colección: " + COLLECTION);
+				return;
+			}
+			try {
+				// Cierra la colección
+				col.close();
+			} catch (XMLDBException xe) {
+				xe.printStackTrace();
 			}
 		}
 	}
+}
