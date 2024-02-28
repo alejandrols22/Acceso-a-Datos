@@ -1,4 +1,4 @@
-package modelo;
+package ejercicio1;
 
 
 import java.util.Scanner;

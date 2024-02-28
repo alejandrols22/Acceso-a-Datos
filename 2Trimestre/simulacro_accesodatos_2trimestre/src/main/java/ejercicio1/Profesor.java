@@ -1,4 +1,4 @@
-package modelo;
+package ejercicio1;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

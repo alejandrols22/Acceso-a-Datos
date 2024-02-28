@@ -1,4 +1,4 @@
-package modelo;
+package ejercicio1;
 
 import java.util.List;
 
@@ -7,8 +7,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-
-import modelo.Profesor; 
+import ejercicio1.Profesor; 
 
 public class GestorProfesores {
 	private static SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
